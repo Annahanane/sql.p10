@@ -19,17 +19,17 @@ FROM project;
 -- Écrivez la requête qui permet de lister le student dont l'id est `2`
 SELECT *
 FROM student
-WHERE id = '2';
+WHERE id = 2;
 -- Exo 1.4
 -- Écrivez la requête qui permet de lister les students dont l'id n'est pas `2`
 SELECT *
 FROM student
-WHERE id != '2';
+WHERE id != 2;
 -- Exo 1.5
 -- Écrivez la requête qui permet de lister le project dont l'id est `3`
 SELECT *
 FROM project
-WHERE id = '3';
+WHERE id = 3;
 
 -- Exo 1.6
 -- Écrivez la requête qui permet de lister les projects dont l'id n'est pas `3`
@@ -53,7 +53,7 @@ WHERE ceated_at < '2021-01-10 00 00 00';
 -- Écrivez la requête qui permet de lister les projects dont la description contient pas la chaîne de caractères `Dolores`
 SELECT *
 FROM  project
-WHERE descreption LIKE '%Dolores%';
+WHERE descreption NOT LIKE '%Dolores%';
 -- Exo 1.10
 -- Écrivez la requête qui permet de lister les projects dont la date de création est postérieure au 1er juillet 2021 inclus
 SELECT *
